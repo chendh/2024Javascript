@@ -1,0 +1,19 @@
+p{
+    color: blue;
+    text-align: center;
+    font-size: 20px;
+}
+#myh1{
+    color: green;
+    text-align: center;
+}
+p.class1{
+    background-color: wheat;
+    font-weight: bold;
+    text-decoration: underline;
+}
+table, th, td{
+    width:400px;
+    border: 1px solid red;
+    text-align: center;
+}
