@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,26 @@
     <script src="js/week05.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <h2>Javascript demo</h2>
     <p id="demo" style="color: blue;">Click the button to change the text in this paragraph.</p>
     <button type="button" onclick="myFunction()">Click Me!</button>
+    <br />
+    <p id="demo1">test</p>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        let text = "<ul>";
+        fruits.forEach(myFunction1);
+        text += "</ul>";
+
+        document.getElementById("demo1").innerHTML = text;
+
+        function myFunction1(value) {
+            text += "<li>" + value + "</li>";
+        } 
+    </script>
 </body>
+
 </html>
