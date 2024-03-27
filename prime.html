@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>質數列表</title>
+    <script>
+        function checkPrime() {
+            let n = Number(document.getElementById("myNumber").value);
+            let primes = [];
+
+            if (isNaN(n) || n < 2) window.alert("請輸入一個大於2的數值")
+            else { //檢查介於2~n之間的所有質數
+                for (let i = 2; i <= n; i++) {
+                    if (isPrime(i)) {
+                        primes.push(i);
+                    }
+                }
+            }
+        }
+
+        function isPrime(num) {
+            // 判斷num是否為質數
+            for (let i = 2; i < num; i++) {
+                if (num % i == 0) return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>請輸入一個數值：</h1>
+    <input type="text" id="myNumber">
+    <button onclick="checkPrime()">檢查</button>
+
+    <p id="result"></p>
+</body>
+
+</html>
