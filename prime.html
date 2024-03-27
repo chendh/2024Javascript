@@ -31,8 +31,7 @@
           str += `<span style="color:hsl(${i * cs}, 100%, 50%)">${primes[i]
             }的倍數： </span>`;
           for (let j = primes[i]; j <= n; j += primes[i]) {
-            str += `<span style="color:hsl(${i * cs
-              }, 100%, 50%)">${j}  </span>`;
+            str += `<span style="color:hsl(${i * cs}, 100%, 50%)">${j}  </span>`;
           }
           str += "<br/>";
         }
