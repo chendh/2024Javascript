@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>N*N乘法表</title>
     <script>
-        function myFunction(){
+        function myFunction() {
             let n = Number(document.getElementById("num").value);
             let table = document.getElementById("myTable");
             table.innerHTML = "";
 
-            for (var i=1; i<=n; i++){
+            for (var i = 1; i <= n; i++) {
                 let row = document.createElement("tr");
 
-                for (var j=1; j<=n; j++){
+                for (var j = 1; j <= n; j++) {
                     let cell = document.createElement("td");
-                    let cellText = `${i} * ${j} = ${i*j}`;
+                    let cellText = `${i} * ${j} = ${i * j}`;
                     cell.textContent = cellText;
                     row.appendChild(cell);
                 }
@@ -26,12 +26,13 @@
         }
     </script>
     <style>
-        table{
+        table {
             border-collapse: collapse;
             border: 1px solid black;
         }
-        td{
-            background-color:cornsilk;
+
+        td {
+            background-color: cornsilk;
             border: 1px solid black;
             text-align: center;
             padding: 10px;
@@ -43,8 +44,8 @@
     <h1>N*N乘法表</h1>
     <input type="number" id="num" placeholder="請輸入一個數值N">
     <button type="button" onclick="myFunction()">送出</button>
-    <br/>
-    <br/>
+    <br />
+    <br />
     <table id="myTable"></table>
 </body>
 
